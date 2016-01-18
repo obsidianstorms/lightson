@@ -1,32 +1,40 @@
 /* copyright license/LICENSE */
 
-
-
-
-
-
-
 body {background-color: #333333;}
 
-#lights { }
 #top, #bottom {}
 #top {margin: 0px auto auto auto; clear:both;}
 #bottom {margin-top:40px; clear:both;}
 
 /*div {border: solid 1px #fff;}  *for some reason currently need border to stay visible when overlay enabled*/
 #portcontrol {}
-.switch {background-color: #ffffff; width: 150px; height: 30px; border: 1px solid #000; clear:both; padding:3px;}
+.switch {background-color: #ffffff; width: 200px; height: 30px; border: 1px solid #000; clear:both; padding:3px;}
 .label, .button, .error, .good { padding: 2px; float: left;}
 .label, .button { height: 20px;}
 .label {width: 60px;}
-.button {width: 40px; margin-left: 10px; border:1px solid #000; background: #777; text-align:center;}
-#p0 { width: 64px;} /*custom button*/
+.button {width: 80px; margin-left: 10px; border:1px solid #000; background: #777; text-align:center;}
+#p0 { width: 65px;} /*custom button*/
 .error, .good { width:8px; height: 8px; margin: 6px auto auto 10px;}
 .error {background-color: #990000;}
 .good {	background-color: #009900;}
-/*the color/shape could be svg or php generated, just need to figure out how to have it be dynamic*/
 
+
+#host {float: left;}
+.device {background-color: #ffffff; width: 200px; height: 30px; border: 1px solid #000; clear:both; padding:3px;}
+.label, .hostdisplay{ padding: 2px; float: left;}
+.label, .hostdisplay { height: 20px;}
+.hostdisplay {width: 120px; margin-left: 10px; border:1px solid #000; background: #777; text-align:center;}
+
+
+
+
+
+/*UNUSED --> CORRECTION: USED BUT NOT ORIGINAL DEFAULT*/
+
+/*the color/shape could be svg or php generated, just need to figure out how to have it be dynamic*/
 /*.off, .on { 	*/
+#lights { }
+
 #overlay {
 	z-index: 10;
 	position: fixed;
@@ -37,8 +45,6 @@ body {background-color: #333333;}
 .off, .on { background-color: #333333; }
 .off { bottom: 0px; /*lights off*/  /*id: overlay*/  }
 .on { height: 5px;  /*lights on*/ }
-
-
 
 	/* opacity: .5;                            FF 1.0 to 0.0*/
 	 /*filter: alpha(opacity=50);    IE 100 to 0*/

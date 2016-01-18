@@ -1,5 +1,6 @@
 <?php
 // copyright license/LICENSE
+//NOT USED - has been split between outletcontrol, outletstatus, and outlet_values
 
 //SNMPv3 Details
 $sec_name = "_security_name_";

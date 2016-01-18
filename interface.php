@@ -1,5 +1,4 @@
-<?php // copyright license/LICENSE ?>
-<html>
+<?php // copyright license/LICENSE ?><html>
 <head>
 <?php /*on the fly php gif img creation for light box*/ ?>
 <!--style type="text/css"></style-->
@@ -24,6 +23,11 @@
 Choose specific ports to turn off or on, or use the Master to restart all outlets. If the master restart is used, wait 5-8 seconds for the indicator lights to refresh.</p>
 	<div id="portcontrol">
 	<div class="switch"><div class="label">Master</div><div id="p0" class="button">Restart</div><!--div id="p0s" class="error"></div--></div>
+<!---------------------->
+	<div id="host">
+		<div class="device"><div class="label">Host: </div><input id="hostvalue" class="hostdisplay">209.114.126.13</input></div>
+	</div>
+<!---------------------->
 	<div class="switch"><div class="label">Port 1</div><div id="p1" class="button">On</div><div id="p1s" class="error"></div></div>
 	<div class="switch"><div class="label">Port 2</div><div id="p2" class="button">On</div><div id="p2s" class="error"></div></div>
 	<div class="switch"><div class="label">Port 3</div><div id="p3" class="button">On</div><div id="p3s" class="error"></div></div>
@@ -33,6 +37,7 @@ Choose specific ports to turn off or on, or use the Master to restart all outlet
 	<div class="switch"><div class="label">Port 7</div><div id="p7" class="button">On</div><div id="p7s" class="error"></div></div>
 	<div class="switch"><div class="label">Port 8</div><div id="p8" class="button">On</div><div id="p8s" class="error"></div></div>
 	</div>
+
 
 </div>
 

@@ -1,6 +1,8 @@
 <?php
 // copyright license/LICENSE
 
+
+//SEND MODIFYING STATE COMMAND
 include("outlet_values.php");
 
 

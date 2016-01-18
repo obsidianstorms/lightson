@@ -1,11 +1,7 @@
 // copyright license/LICENSE
-
 window.onload = initLoad;
 //rule: onclick must be set to = functionname not "functionname()"
 //rule: use of "this" might allow this.childValue.nodeValue to be read and then changed by simple assignment rather than having to use this.childNode to get then delete then createTextNode then appendNode.... see v2 vs v3
-function test () { alert ("hi"); } //test function
-
-
 
 
 function initLoad() {	//globals and initial functions
@@ -15,6 +11,8 @@ function initLoad() {	//globals and initial functions
 	lightsOn();//lights on to start w/   //use master_lights.onclick = lightsOn; //or call lightsOff(); if want the overlay active at start
 //POWER
 	powerControlSetup(); //run power control setup to create port and master controls
+//ERROR
+	
 }
 	
 
@@ -82,7 +80,12 @@ function checkOutletState(o_id){ //return int:outlet_state; //1 for on, 2 for of
 			break;
 		default:
 			alert("Error with outlet state determination");
+			var error = "fatal";  //<----------------------------------------WORKING ON EXIT PROCEDURE
 		}
+	if (error == "fatal") {
+		alert("Stopping Script. There is a fatal error with communication or the script.");
+		break;	
+	}
 	updateLightState(o_id,color);
 	updateButtonState(o_id,label);
 	return outlet_state; //1 for on, 2 for off
