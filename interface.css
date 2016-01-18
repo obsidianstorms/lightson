@@ -1,3 +1,11 @@
+/* copyright license/LICENSE */
+
+
+
+
+
+
+
 body {background-color: #333333;}
 
 #lights { }
@@ -12,6 +20,7 @@ body {background-color: #333333;}
 .label, .button { height: 20px;}
 .label {width: 60px;}
 .button {width: 40px; margin-left: 10px; border:1px solid #000; background: #777; text-align:center;}
+#p0 { width: 64px;} /*custom button*/
 .error, .good { width:8px; height: 8px; margin: 6px auto auto 10px;}
 .error {background-color: #990000;}
 .good {	background-color: #009900;}

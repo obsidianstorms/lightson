@@ -1,3 +1,4 @@
+// copyright license/LICENSE
 function createRequest() {
   try {
     request = new XMLHttpRequest();

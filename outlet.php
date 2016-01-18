@@ -1,5 +1,5 @@
 <?php
-
+// copyright license/LICENSE
 
 //SNMPv3 Details
 $sec_name = "_security_name_";
@@ -15,10 +15,10 @@ $comm = "private"; //public vs private (read vs read/write)
 
 $ip = "ip.ad.dr.ess"; //device ip or host ip of the PDU
 $pre = ""; //device prefix oid values - ".#.#.#.#.#.#.#"
-//not sure if need ".1 or "1 --the prefix period "." --not seem to make a difference
 
 //OID values
 $det = ""; //rPDUOutletControlOutletCommand - state on/off - ".#.#.#.#.#.#.#.#"
+
 
 //DYNAMIC VALUES
 $num = 1;  //outlet port # (1-8)
